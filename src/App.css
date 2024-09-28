@@ -1,0 +1,347 @@
+body{
+  background-color: #191a28;
+}
+
+/* navigation bar */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  
+}
+.github{
+align-items: flex-end;
+}
+
+.navbar {
+  background-color: #1c2633;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brand-name {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #4CAF50;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-white {
+  color: white;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px; 
+  }
+
+  /* sliding css */
+  .container3{
+    max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  }
+  .carousel {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left:  80px;
+    padding-right: 80px;
+    border-radius: 10px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .carousel-indicators button {
+    background-color: #666;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #333;
+  }
+  
+/* Hero designing part */
+.container2{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.hero {
+  background: linear-gradient(135deg, #1f1f1f, #232935); /* Dark gradient background */
+  color: #fff; /* White text */
+  
+  border-radius: 15px;
+}
+
+.hero .hero-image {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a shadow effect */
+}
+
+.hero h1 {
+  color: #fbfbfb; /* Bright yellow heading */
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #f0f0f0; /* Light gray for text */
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero .btn-primary {
+  background-color: #ff5f5f; /* Red button */
+  border: none;
+  box-shadow: 0 4px 10px rgba(255, 95, 95, 0.4); /* Button shadow */
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #ff3232; /* Darker red on hover */
+}
+
+.hero .btn-outline-secondary {
+  color: #00bfff; /* Blue text for the secondary button */
+  border-color: #00bfff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn-outline-secondary:hover {
+  background-color: #00bfff; /* Blue background on hover */
+  color: white; /* White text on hover */
+}
+
+.d-grid .gap-3 {
+  gap: 20px; /* Increase the gap between buttons */
+}
+
+
+/*Details designing */
+
+.container3{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+
+/* Container for feature rows */
+.row {
+  background-color: #1a1a2e; /* Dark background for the entire row */
+  padding: 2rem; /* Padding to create spacing around the content */
+  border-radius: 0.5rem; /* Rounded corners */
+}
+
+/* Styling individual features */
+.feature {
+  padding: 1rem;
+  background-color: #688fb233; /* Slightly lighter dark background for feature items */
+  border-radius: 0.5rem; /* Rounded corners for individual features */
+  box-shadow: 0px 4px 5px -2px rgba(255, 255, 255, 0.2), 
+              0px 7px 10px 1px rgba(252, 252, 252, 0.14), 
+              0px 2px 16px 1px rgba(255, 254, 254, 0.12); /* Box shadow for some depth */
+}
+
+/* Feature icon styling */
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1d5db; /* Light gray icon color */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #3a3b5a, #2b2d42); /* Gradient background for icon */
+}
+
+/* Feature heading */
+.feature h3 {
+  color: #e5e7eb; /* Light color for headings */
+}
+
+/* Feature paragraph */
+.feature p {
+  color: #cfd4e1; /* Light gray for paragraph text */
+}
+
+/* Feature link */
+.icon-link {
+  color: #a5b4fc; /* Light bluish link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #7c91f0; /* Slightly darker blue on hover */
+}
+
+/* Icon within link */
+.icon-link i {
+  margin-left: 0.5rem; /* Space between link text and icon */
+}
+
+
+
+  
+
+/* Reviews designing part */
+
+.container4{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.reviews-container {
+  background-color: #878787; /* Dark gray background */
+
+  color: #f7f8f9; /* Light text color for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+  font-size: 20px;
+  
+}
+
+h6 {
+  color: #ffffff; /* White color for the heading */
+}
+
+.d-flex {
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.bd-placeholder-img {
+  background-color: #fff; /* White background for SVG placeholder */
+}
+
+.text-body-secondary {
+  color: #b0b0b0; /* Light gray text */
+}
+
+a {
+  color: #f0f0f0; /* Light color for the link */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff; /* Change color on hover */
+  text-decoration: underline;
+}
+
+.border-bottom {
+  border-color: #fff9f9; /* Darker border color to blend with background */
+}
+
+.me-2 {
+  margin-right: 10px;
+}
+
+.pt-3 {
+  padding-top: 20px;
+}
+
+.pb-3 {
+  padding-bottom: 20px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-3 {
+  margin-top: 20px;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+  
+
+
+/* Footer Designing part */
+
+/* Container for Footer */
+.container1 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Footer styling */
+footer {
+  background-color: #c7c7c7; /* Dark background color */
+  color: #adb0b7; /* Light text color for contrast */
+  padding: 1rem;
+  border-top: 1px solid #7f8388; /* Grayish border top */
+}
+
+/* Footer link and icon styles */
+.link-body-emphasis {
+  color: #a5b4fc; /* Light bluish color for links */
+}
+
+.link-body-emphasis:hover {
+  color: #7c91f0; /* Slightly darker blue for hover effect */
+}
+
+/* Text styling */
+.text-body-secondary {
+  color: #cfd4e1; /* Light gray text for secondary elements */
+}
+
+/* Footer navigation links */
+.nav-link {
+  color: #cfd4e1; /* Light gray color for navigation links */
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ffffff; /* White color for navigation links on hover */
+}
+
+/* SVG icon styling */
+.bi {
+  fill: #cfd4e1; /* Light gray color for the SVG icon */
+  transition: fill 0.3s ease;
+}
+
+.bi:hover {
+  fill: #e5e7eb; /* Lighter color for the SVG icon on hover */
+}
