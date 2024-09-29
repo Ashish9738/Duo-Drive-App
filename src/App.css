@@ -1,5 +1,5 @@
 body{
-  background-color: #191a28;
+  background: linear-gradient(180deg, #000000, #1a1a1a); /* Gradient background */
 }
 
 /* navigation bar */
@@ -7,14 +7,12 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
-  
-}
-.github{
-align-items: flex-end;
 }
 
+
+
 .navbar {
-  background-color: #1c2633;
+  background: linear-gradient(45deg, #1a1a1a, #333333); /* Gradient effect for navbar */
   padding: 15px;
   border-radius: 8px;
 }
@@ -25,8 +23,8 @@ align-items: flex-end;
 }
 
 .brand-name {
-  margin-left: 10px;
-  color: #fff;
+  margin-left: 5px;
+  color: #ffffff;
 }
 
 .nav {
@@ -35,313 +33,312 @@ align-items: flex-end;
 }
 
 .nav-link {
+  padding: 0 15px; /* Add padding inside the links for better click area */
   font-size: 1.2rem;
+
+  margin-left: 15px;
+  text-decoration: none;
+  color: #ffffff; /* White text color */
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #4CAF50;
+  color: #b0b0b0;
 }
 
 .text-secondary {
-  color: #6c757d;
+  color: #666666;
 }
 
 .text-white {
-  color: white;
+  color: #ffffff;
 }
+
 .logo {
   width: 40px;
   height: 40px;
   margin-right: 10px; 
-  }
-
-  /* sliding css */
-  .container3{
-    max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
-  }
-  .carousel {
-    max-width: 100%;
-    margin: 0 auto;
-    padding-left:  80px;
-    padding-right: 80px;
-    border-radius: 10px;
-  }
   
-  .carousel-item img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: black;
-    border-radius: 50%;
-  }
-  
-  .carousel-indicators button {
-    background-color: #666;
-  }
-  
-  .carousel-indicators .active {
-    background-color: #333;
-  }
-  
-/* Hero designing part */
-.container2{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
 }
 
-
-.hero {
-  background: linear-gradient(135deg, #1f1f1f, #232935); /* Dark gradient background */
-  color: #fff; /* White text */
-  
-  border-radius: 15px;
+.nav li:last-child {
+  margin-right: 0;
 }
-
-.hero .hero-image {
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a shadow effect */
+.nav li {
+  display: inline-block; /* Ensure they are inline */
+  margin-right: 5px; /* Add spacing between each list item */
+  margin-left: 10px;
 }
-
-.hero h1 {
-  color: #fbfbfb; /* Bright yellow heading */
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  color: #f0f0f0; /* Light gray for text */
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-.hero .btn-primary {
-  background-color: #ff5f5f; /* Red button */
-  border: none;
-  box-shadow: 0 4px 10px rgba(255, 95, 95, 0.4); /* Button shadow */
-  transition: background-color 0.3s ease;
-}
-
-.hero .btn-primary:hover {
-  background-color: #ff3232; /* Darker red on hover */
-}
-
-.hero .btn-outline-secondary {
-  color: #00bfff; /* Blue text for the secondary button */
-  border-color: #00bfff;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.hero .btn-outline-secondary:hover {
-  background-color: #00bfff; /* Blue background on hover */
-  color: white; /* White text on hover */
-}
-
-.d-grid .gap-3 {
-  gap: 20px; /* Increase the gap between buttons */
-}
-
-
-/*Details designing */
-
+/*////// sliding css///// */
 .container3{
+  max-width: 1400px;
+  /* margin: 0 auto; */
+  padding: 0;
+}
+
+.carousel {
+  max-width: 110%;
+  margin: 0;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  /* padding-left: 5px; */
+  padding-right: 0px;
+
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.carousel-indicators button {
+  background-color: #777777;
+}
+
+.carousel-indicators .active {
+  background-color: #444444;
+}
+
+/* Hero section styling */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+  color: white;
+  position: relative;
+  overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
 }
 
+/* Glowing animation for the hero text */
+/* @keyframes glowingText {
+  0% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #2e2f2f, 0 0 20px #333434, 0 0 40px #505352;
+  }
+  50% {
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #3c3c3c, 0 0 30px #4b4b4b, 0 0 60px #4c514f;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #2c2f2e, 0 0 20px #343736, 0 0 40px #545856;
+  }
+} */
 
+.hero-content {
+  text-align: center;
+  max-width: 1500px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+ }
 
-/* Container for feature rows */
-.row {
-  background-color: #1a1a2e; /* Dark background for the entire row */
-  padding: 2rem; /* Padding to create spacing around the content */
-  border-radius: 0.5rem; /* Rounded corners */
+.hero-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 2px solid #bfc6c3;
+  animation: pulse 2s infinite;
 }
 
-/* Styling individual features */
+/* Title styling */
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: glowingText 2s infinite alternate;
+}
+
+/* Paragraph styling */
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+/* Button styling */
+.download-btn {
+  background-color: #444444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #3e3e3e;
+  box-shadow: 0 0 10px #484949, 0 0 20px #484949, 0 0 30px #5e6361;
+}
+
+/* Fade-in and pulse animations */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 153, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(0, 255, 153, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 153, 0);
+  }
+}
+
+
+/* Container for accordion section */
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Custom font style */
+body {
+  font-family: 'Arial', sans-serif; /* Change to your desired font family */
+}
+
+/* Gradient style for titles */
+.text-gradient {
+  background: linear-gradient(90deg, #0548ff, #6a98e7); /* Dark blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Bold text style */
+.font-bold {
+  font-weight: bold;
+}
+
+
+/* Styling the feature rows */
+.row {
+  background: linear-gradient(180deg, #222222, #333333);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* Styling individual feature containers */
 .feature {
   padding: 1rem;
-  background-color: #688fb233; /* Slightly lighter dark background for feature items */
-  border-radius: 0.5rem; /* Rounded corners for individual features */
+  background: linear-gradient(180deg, #333333, #444444);
+  border-radius: 0.5rem;
   box-shadow: 0px 4px 5px -2px rgba(255, 255, 255, 0.2), 
-              0px 7px 10px 1px rgba(252, 252, 252, 0.14), 
-              0px 2px 16px 1px rgba(255, 254, 254, 0.12); /* Box shadow for some depth */
+              0px 7px 10px 1px rgba(255, 255, 255, 0.14), 
+              0px 2px 16px 1px rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
-/* Feature icon styling */
+/* Styling the feature headers */
+.feature-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Styling feature icons */
 .feature-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #d1d5db; /* Light gray icon color */
+  color: #d1d5db;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #3a3b5a, #2b2d42); /* Gradient background for icon */
+  background: linear-gradient(45deg, #4a4a4a, #2b2b2b);
+  margin-right: 1rem;
 }
 
-/* Feature heading */
-.feature h3 {
-  color: #e5e7eb; /* Light color for headings */
+/* Accordion toggle icon */
+.accordion-toggle {
+  font-size: 1.5rem;
+  color: #d1d5db;
 }
 
-/* Feature paragraph */
-.feature p {
-  color: #cfd4e1; /* Light gray for paragraph text */
+/* Styling feature content */
+.feature-content {
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, padding 0.4s ease;
 }
 
-/* Feature link */
-.icon-link {
-  color: #a5b4fc; /* Light bluish link color */
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+.feature-content.active {
+  max-height: 150px;
 }
 
-.icon-link:hover {
-  color: #7c91f0; /* Slightly darker blue on hover */
+/* H3 header styling */
+h3 {
+  color: #f0f0f0;
+  margin: 0;
 }
 
-/* Icon within link */
-.icon-link i {
-  margin-left: 0.5rem; /* Space between link text and icon */
-}
-
-
-
-  
-
-/* Reviews designing part */
-
-.container4{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
-}
-.reviews-container {
-  background-color: #878787; /* Dark gray background */
-
-  color: #f7f8f9; /* Light text color for contrast */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
-  font-size: 20px;
-  
-}
-
-h6 {
-  color: #ffffff; /* White color for the heading */
-}
-
-.d-flex {
-  align-items: center;
-  padding-bottom: 15px;
-}
-
-.bd-placeholder-img {
-  background-color: #fff; /* White background for SVG placeholder */
-}
-
-.text-body-secondary {
-  color: #b0b0b0; /* Light gray text */
-}
-
-a {
-  color: #f0f0f0; /* Light color for the link */
-  text-decoration: none;
-}
-
-a:hover {
-  color: #007bff; /* Change color on hover */
-  text-decoration: underline;
-}
-
-.border-bottom {
-  border-color: #fff9f9; /* Darker border color to blend with background */
-}
-
-.me-2 {
-  margin-right: 10px;
-}
-
-.pt-3 {
-  padding-top: 20px;
-}
-
-.pb-3 {
-  padding-bottom: 20px;
-}
-
-.mb-0 {
-  margin-bottom: 0;
-}
-
-.mt-3 {
-  margin-top: 20px;
-}
-
-.rounded {
-  border-radius: 50%;
-}
-
-  
-
-
-/* Footer Designing part */
-
-/* Container for Footer */
-.container1 {
-  max-width: 1200px;
-  margin: auto;
-}
 
 /* Footer styling */
 footer {
-  background-color: #c7c7c7; /* Dark background color */
-  color: #adb0b7; /* Light text color for contrast */
+  background: linear-gradient(180deg, #e6e4e4, #cccccc); /* Gradient background */
+  color: #ffffff;
   padding: 1rem;
-  border-top: 1px solid #7f8388; /* Grayish border top */
+  border-top: 1px solid #666666;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 /* Footer link and icon styles */
 .link-body-emphasis {
-  color: #a5b4fc; /* Light bluish color for links */
+  color: #ffffff;
 }
 
 .link-body-emphasis:hover {
-  color: #7c91f0; /* Slightly darker blue for hover effect */
-}
-
-/* Text styling */
-.text-body-secondary {
-  color: #cfd4e1; /* Light gray text for secondary elements */
+  color: #e5e7eb;
 }
 
 /* Footer navigation links */
 .nav-link {
-  color: #cfd4e1; /* Light gray color for navigation links */
+  color: #ffffff;
   transition: color 0.3s ease;
-  text-decoration: none;
 }
 
 .nav-link:hover {
-  color: #ffffff; /* White color for navigation links on hover */
+  color: #e5e7eb;
 }
 
 /* SVG icon styling */
 .bi {
-  fill: #cfd4e1; /* Light gray color for the SVG icon */
+  fill: #ffffff;
   transition: fill 0.3s ease;
 }
 
 .bi:hover {
-  fill: #e5e7eb; /* Lighter color for the SVG icon on hover */
+  fill: #e5e7eb;
 }
