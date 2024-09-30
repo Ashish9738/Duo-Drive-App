@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="container1">
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p className="col-md-4 mb-0 text-body-secondary">© 2024 DUO Driver. All rights reserved.</p>
+        <p className="col-md-4 mb-0 ml-4 text-body-secondary">© 2024 DUO Driver. All rights reserved.</p>
 
         <a
           href="/"
@@ -13,23 +13,23 @@ const Footer = () => {
           </svg>
         </a>
 
-        <ul className="nav col-md-4 justify-content-end">
+        {/* <ul className="nav col-md-4 justify-content-end">
           <li className="nav-item">
             <a href="#" className="nav-link px-2 text-body-secondary">
               Overview
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a href="#Reviews" className="nav-link px-2 text-body-secondary">
               Reviews
             </a>
-          </li>
-          <li className="nav-item">
+          </li> */}
+          {/* <li className="nav-item">
             <a href="#Details" className="nav-link px-2 text-body-secondary">
               Details
             </a>
           </li>
-        </ul>
+        </ul> */} 
       </footer>
     </div>
   );
